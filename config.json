@@ -1,0 +1,46 @@
+{
+  "whisper": {
+    "model": "large-v3-turbo",
+    "device": "auto",
+    "language": ["pt", "en"],
+    "beam_size": 1
+  },
+  "hotkey": [
+    "ctrl",
+    "win"
+  ],
+  "activation": "toggle",
+  "pill_buttons": true,
+  "esc_cancels": true,
+  "auto_stop": {
+    "silence_ms": 1500,
+    "silence_ms_long": 2600,
+    "long_after_sec": 12,
+    "min_level": 0.008,
+    "start_timeout_sec": 8,
+    "max_sec": 180
+  },
+  "preroll_ms": 600,
+  "tail_ms": 300,
+  "min_speech_sec": 0.3,
+  "inject_mode": "paste",
+  "sounds": true,
+  "sound_volume": 0.15,
+  "ollama": {
+    "enabled": true,
+    "url": "http://localhost:11434",
+    "model": "gemma3:4b",
+    "timeout_sec": 15,
+    "chunk_chars": 600,
+    "budget_sec": 40
+  },
+  "read_aloud": {
+    "enabled": true,
+    "hotkey": ["ctrl", "alt", "s"],
+    "voices": {
+      "pt": "pt_BR-faber-medium",
+      "en": "en_US-lessac-medium"
+    },
+    "speed": 1.0
+  }
+}

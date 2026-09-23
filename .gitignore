@@ -1,0 +1,13 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# personal: every dictation is written to this log
+localflow.log
+
+# Piper TTS binaries and voice models (~160 MB) — see README to download
+piper/
+
+# design mockups and screenshots, kept on this PC only
+preview/
